@@ -16,7 +16,6 @@ def add_item(title,price,quantity = 1)
   end
  @last_transaction_amount = @total
 end
-end
 def  apply_discount()
   if @with_discount > 0
       @discount =  (@total * @with_discount)/100
