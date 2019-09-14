@@ -10,7 +10,7 @@ def discount
     self.with_discount
 end
 def add_item(title,price,quantity = 1)
-  self.total += price*quantity
+  @total += price*quantity
     quantity.times do
   items << title
  @last_transaction_amount = @total
@@ -19,8 +19,8 @@ end
 end
 def  apply_discount()
   if @with_discount > 0
-      @discount =  (self.total * @with_discount)/100
-      self.total -= @discount
+      @discount =  (@total * @with_discount)/100
+      @total -= @discount
       
     "After the discount, the total comes to $#{@total}."
     else
@@ -33,7 +33,8 @@ end
   # @total -= @last_transaction_amount
 def void_last_transaction
  #e binding.pry
-  self.total -= self.last_transaction_amount
+ @total -= @last_transaction_amount
+  #self.total -= self.last_transaction_amount
 end
 end
 
