@@ -14,7 +14,7 @@ def add_item(title,price,quantity = 1)
     quantity.times do
   items << title
  @last_transaction_amount = @total
-    @total
+ @total
 end
 end
 def  apply_discount()
