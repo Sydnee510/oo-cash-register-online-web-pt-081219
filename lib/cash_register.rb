@@ -32,7 +32,7 @@ def  apply_discount()
   if @with_discount > 0
       @discount =  (self.total * @with_discount)/100
       self.total -= @discount
-      total
+      
     "After the discount, the total comes to $#{@total}."
     else
       "There is no discount to apply."
