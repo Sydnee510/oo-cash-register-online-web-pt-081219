@@ -31,8 +31,8 @@ def items
 end
   # @total -= @last_transaction_amount
 def void_last_transaction()
- # self.total -= self.last_transaction_amount 
- self.last_transaction_amount -= self.total
+  self.total -= self.last_transaction_amount 
+ 
 end
 end
 
